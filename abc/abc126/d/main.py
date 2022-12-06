@@ -24,10 +24,10 @@ def main():
         col[s] = 0
         while que:
             fr = que.popleft()
-            for to, cost in edges[fr]:
+            for to, dist in edges[fr]:
                 if col[to] != -1:
                     continue
-                col[to] = (col[fr] + cost) % 2
+                col[to] = (col[fr] + dist) % 2
                 que.append(to)
         return col
 
