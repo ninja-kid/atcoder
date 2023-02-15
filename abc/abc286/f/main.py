@@ -90,7 +90,7 @@ def main():
         offset += p
     ans = crt(C, primes)
     print(ans[0])
-
+    
 
 if __name__ == "__main__":
     main()
